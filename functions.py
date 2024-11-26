@@ -72,7 +72,7 @@ def dice(num_of_sides, user, name, amount):
     result = ""
     res_list = []
     for i in range (amount):
-        res_list = res_list + random.sample(range(1, num_of_sides+1), 1)
+        res_list = res_list + random.sample(range(1, num_of_sides), 1)
     result = (name + " " + str(res_list))
     return(result)
 
